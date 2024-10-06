@@ -1,0 +1,6 @@
+{
+    "title": "Ruby Basics: Understanding Objects and Methods",
+    "content": "Ruby is a dynamic, object-oriented programming language known for its simplicity and elegance. It’s commonly used in web development, especially with the Ruby on Rails framework. Let’s explore the basics of Ruby.\n\n## Variables in Ruby\n\nVariables in Ruby don’t require explicit type declaration. For example:\n\n```ruby\nname = 'Alice'  # string\nage = 30  # integer\n```\n\n## Methods in Ruby\n\nMethods in Ruby are defined using the `def` keyword:\n\n```ruby\ndef greet(name)\n  \"Hello, #{name}!\"\nend\n\nputs greet('John')\n```\n\n## Classes and Objects\n\nIn Ruby, everything is an object, and classes are used to define the blueprint for objects:\n\n```ruby\nclass Person\n  def initialize(name, age)\n    @name = name\n    @age = age\n  end\n\n  def introduce\n    \"Hi, I'm #{@name} and I'm #{@age} years old.\"\n  end\nend\n\nperson = Person.new('Alice', 30)\nputs person.introduce\n```\n\n### Conclusion\n\nRuby’s object-oriented nature and easy-to-understand syntax make it a great language for beginners. By mastering methods and classes, you can create powerful programs with minimal code.",
+    "author": "Jaydip Satani",
+    "slug": "how-to-learn-ruby-basics"
+}

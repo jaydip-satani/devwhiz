@@ -1,0 +1,6 @@
+{
+    "title": "PHP Basics: Server-Side Scripting for Web Development",
+    "content": "PHP is a popular server-side scripting language that powers many websites and web applications. It’s known for its simplicity and ability to integrate with HTML. Let’s explore the basics of PHP.\n\n## Embedding PHP in HTML\n\nPHP can be embedded directly within HTML files. A simple PHP block looks like this:\n\n```php\n<?php\necho 'Hello, world!';\n?>\n```\n\n## Variables and Data Types\n\nPHP variables start with a dollar sign (`$`), and you can assign various data types:\n\n```php\n$name = 'John';  // string\n$age = 30;  // integer\n$isAdmin = true;  // boolean\n```\n\n## Conditional Statements\n\nPHP supports standard conditional statements like `if` and `else`:\n\n```php\nif ($age >= 18) {\n  echo 'You are an adult.';\n} else {\n  echo 'You are a minor.';\n}\n```\n\n## Functions in PHP\n\nFunctions in PHP are defined using the `function` keyword:\n\n```php\nfunction greet($name) {\n  return \"Hello, $name!\";\n}\n\necho greet('Alice');\n```\n\n### Conclusion\n\nPHP is a powerful and flexible tool for server-side web development. By mastering variables, control structures, and functions, you’ll be ready to create dynamic web pages.",
+    "author": "Jaydip Satani",
+    "slug": "how-to-learn-php-basics"
+}
