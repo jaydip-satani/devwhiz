@@ -9,6 +9,6 @@ export async function GET(request: Request) {
         const jsonData = JSON.parse(data);
         return NextResponse.json(jsonData, { status: 200 });
     } catch (error) {
-        return NextResponse.json({ error: 'File not found or error occurred' }, { status: 500 });
+        return NextResponse.json({ error: 'File not found or error occurred' + error }, { status: 500 });
     }
 }

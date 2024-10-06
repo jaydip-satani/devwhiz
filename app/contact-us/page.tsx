@@ -46,7 +46,7 @@ const ContactUs = () => {
                 setError('Something went wrong. Please try again.');
             }
         } catch (err) {
-            setError('Something went wrong. Please try again.');
+            setError('Something went wrong. Please try again. ' + err);
         }
     };
 

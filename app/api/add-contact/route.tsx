@@ -4,9 +4,6 @@ import { promisify } from 'util';
 
 const writeFile = promisify(fs.writeFile);
 
-export async function GET(req: Request) {
-    return NextResponse.json({ message: 'GET request received' }, { status: 200 });
-}
 
 export async function POST(req: Request) {
     try {

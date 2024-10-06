@@ -8,7 +8,7 @@ const About: React.FC = () => {
                 <Col md={8}>
                     <h1 className="text-center mb-4">About Devwhiz</h1>
                     <p>
-                        Welcome to <strong>Devwhiz</strong>! We are a passionate community of developers, bloggers, and tech enthusiasts dedicated to sharing knowledge and fostering innovation in the tech world. Whether you're a seasoned developer, a curious learner, or someone looking to stay updated on the latest trends in the tech industry, Devwhiz has something for you.
+                        Welcome to <strong>Devwhiz</strong>! We are a passionate community of developers, bloggers, and tech enthusiasts dedicated to sharing knowledge and fostering innovation in the tech world. Whether you are a seasoned developer, a curious learner, or someone looking to stay updated on the latest trends in the tech industry, Devwhiz has something for you.
                     </p>
                     <p>
                         At <strong>Devwhiz</strong>, we aim to provide insightful articles, tutorials, and resources on a wide range of topics, including web development, programming languages, frameworks, tools, and much more. Our goal is to create a platform where developers can share their experiences, learn from one another, and grow together.
@@ -17,7 +17,7 @@ const About: React.FC = () => {
                         Our blog is designed to be an engaging space for learning and interaction. We believe that through sharing knowledge and experiences, we can help each other overcome challenges, discover new ideas, and continue to evolve as developers.
                     </p>
                     <p>
-                        <strong>Join us on this journey of discovery, learning, and growth. Together, let's make the web a better place, one blog post at a time!</strong>
+                        <strong>Join us on this journey of discovery, learning, and growth. Together, lets make the web a better place, one blog post at a time!</strong>
                     </p>
                     <p className="text-center mt-5">
                         <strong>Happy coding!</strong><br />

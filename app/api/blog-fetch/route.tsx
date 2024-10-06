@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 
-export async function GET(req: Request) {
+export async function GET() {
     try {
         const allBlogs: string[] = [];
         const data = await fs.readdir("blogdata");
@@ -13,6 +13,6 @@ export async function GET(req: Request) {
 
         return NextResponse.json(allBlogs, { status: 200 });
     } catch (error) {
-        return NextResponse.json({ error: 'Blog not found or error occurred' }, { status: 500 });
+        return NextResponse.json({ error: 'Blog not found or error occurred' + error }, { status: 500 });
     }
 }
