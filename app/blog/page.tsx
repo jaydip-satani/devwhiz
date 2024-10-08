@@ -8,7 +8,7 @@ interface Blog {
 }
 
 const BlogPage = async () => {
-    const blogs: Blog[] = await fetch('http://localhost:3000/api/blog-fetch')
+    const blogs: Blog[] = await fetch('/api/blog-fetch')
         .then((response) => {
             if (!response.ok) {
                 throw new Error('Failed to fetch blogs');
