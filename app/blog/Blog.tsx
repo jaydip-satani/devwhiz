@@ -1,4 +1,4 @@
-'use client'; // This component will be a Client Component
+'use client';
 import React from 'react';
 import { Card, CardLink } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
