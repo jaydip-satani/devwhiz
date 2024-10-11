@@ -4,15 +4,19 @@ import path from 'path';
 
 export async function GET() {
     try {
-        const allBlogs: string[] = [];
         const blogDirPath = path.join(process.cwd(), 'blogdata');
-        const data = await fs.readdir(blogDirPath);
 
-        for (const item of data) {
-            const filePath = path.join(blogDirPath, item);
-            const title = await fs.readFile(filePath, 'utf-8');
-            allBlogs.push(JSON.parse(title));
-        }
+        // Read the files from the blogdata directory
+        const files = await fs.readdir(blogDirPath);
+
+        // Read all blog files and parse their content
+        const allBlogs = await Promise.all(
+            files.map(async (file) => {
+                const filePath = path.join(blogDirPath, file);
+                const content = await fs.readFile(filePath, 'utf-8');
+                return JSON.parse(content); // Assuming the blog content is valid JSON
+            })
+        );
 
         return NextResponse.json(allBlogs, { status: 200 });
     } catch (error) {
