@@ -1,17 +1,14 @@
 import React from 'react';
 
-// Define the structure of a blog item
 interface Blog {
     title: string;
     content: string;
-    // [key: string]: any; // Add this if your blog has additional fields
 }
 
-// Fetch blog data directly inside the component
 async function fetchBlogs(): Promise<Blog[]> {
     const baseURL = process.env.NODE_ENV === 'production'
-        ? 'https://yourdomain.com'  // Replace with your production URL
-        : 'http://localhost:3000';   // Use localhost during development
+        ? 'https://yourdomain.com'
+        : 'http://localhost:3000';
 
     const res = await fetch(`${baseURL}/api/blog-fetch`, { cache: 'no-store' });
 
@@ -23,7 +20,7 @@ async function fetchBlogs(): Promise<Blog[]> {
 }
 
 const BlogPage = async () => {
-    const blogs = await fetchBlogs(); // Fetching the blogs inside the component
+    const blogs = await fetchBlogs();
 
     return (
         <div>
